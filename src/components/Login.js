@@ -30,7 +30,7 @@ export default function Login() {
     <>
       <Card
         style={{
-          paddingTop: '250px',
+          paddingTop: '200px',
         }}
       >
         <Card.Body>

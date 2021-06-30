@@ -33,11 +33,17 @@ export default function Signup() {
 
   return (
     <>
-      <Card>
+      <Card style={{
+          paddingTop: '200px',
+        }}>
         <Card.Body>
           <h2 className="text-center mb-4">Sign Up</h2>
           {error && <Alert variant="danger">{error}</Alert>}
-          <Form onSubmit={handleSubmit}>
+          <Form onSubmit={handleSubmit}
+             style={{
+              maxWidth: '500px',
+              margin: '0px auto',
+            }}>
             <Form.Group id="email">
               <Form.Label>Email</Form.Label>
               <Form.Control type="email" ref={emailRef} required />
